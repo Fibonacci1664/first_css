@@ -1,0 +1,54 @@
+/* This is the import of a font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+body
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight:100 !important;
+  margin: 0px;
+  /* background: rgba(255, 127, 0, 0.5);
+  color: #0af; */
+
+
+  /* background: rgb(255, 127, 0); */
+
+
+  /* background: #00ff00;
+  background: #0f0;   /*You can use shorthand hex if each pair is the same digit*/ */
+}
+
+body h1
+{
+  font-weight: 100;
+  /* The order of arguments for setting margin space are top, right, bottom, left (i.e. clockwise)*/
+  margin: 20px 30px
+}
+
+/* This is the body header ID tag, they are unique, no two can be the same.*/
+#main-header
+{
+  border-bottom: 2px solid #000;
+
+  /* border: 1px solid #000;   /* You can also use dotted and dashed.*/ */
+  /* border-top: none; */
+}
+
+/* Rule of specificity always applies as CSS is read top down
+The angle brakets denote prarent/child inheritence, left most being further up the
+inheritence tree*/
+body > header > h3
+{
+  background: #fff;
+  color: #0f0;
+}
+
+/* This targets ANY h3 element anywhere, but because of specificity, this will not be applied*/
+h3
+{
+  color: #000;
+}
+
+/* This targets ANY h3 element in the body, but because of specificity, this will not be applied*/
+body h3
+{
+  color: #00f;
+}
