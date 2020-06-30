@@ -45,10 +45,30 @@ body > header > h3
 h3
 {
   color: #000;
+  margin-left: 400px;
+  margin-top: 100px;
+  padding: 50px;
 }
 
 /* This targets ANY h3 element in the body, but because of specificity, this will not be applied*/
 body h3
 {
   color: #00f;
+}
+
+/* Mulitple elements can be selcted by using commas h1, h3, h4 etc
+Margins are external to the content, padding is internal to the content.*/
+h1
+{
+  float:left;
+  margin-left: 400px;
+  margin-top: 100px;
+  padding: 20px;
+
+  /* display: inline-block;  /* inline blocks are only as wide as they have to be and can use height*/ */
+  /*block elements are full width and can use height*/
+  /* display: inline; /* inline elements are only as wide and as high as they have to be.*/ */
+  /* height: 20px; */
+  /* margin: 0px; */
+  /* line-height: 20px; /* This denotes how high the line itself can be.*/ */
 }
